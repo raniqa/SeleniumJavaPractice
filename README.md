@@ -13,7 +13,7 @@ This repository contains my hands-on Selenium WebDriver practice using **Java**,
 
 ## Project Structure
 
-```
+```text
 SeleniumJavaPractice
 │
 ├── src
@@ -27,15 +27,28 @@ SeleniumJavaPractice
 │   │
 │   └── test
 │       ├── java
-│       │   └── webelements
-│       │       ├── TextBoxPractice.java
-│       │       ├── ButtonPractice.java
-│       │       ├── CheckBoxPractice.java
-│       │       ├── RadioButtonPractice.java
-│       │       ├── LinksPractice.java
-│       │       ├── BrokenLinksPractice.java
-│       │       ├── BrokenImagesPractice.java
-│       │       └── ToolTipPractice.java
+│       │   ├── webelements
+│       │   │   ├── TextBoxPractice.java
+│       │   │   ├── ButtonPractice.java
+│       │   │   ├── CheckBoxPractice.java
+│       │   │   ├── RadioButtonPractice.java
+│       │   │   ├── LinksPractice.java
+│       │   │   ├── BrokenLinksPractice.java
+│       │   │   ├── BrokenImagesPractice.java
+│       │   │   └── ToolTipPractice.java
+│       │   │
+│       │   ├── dropdowns
+│       │   │   ├── SelectDropdownPractice.java
+│       │   │   ├── DynamicDropdownPractice.java
+│       │   │   ├── MultiSelectDropdownPractice.java
+│       │   │   └── AutoSuggestionDropdownPractice.java
+│       │   │
+│       │   └── alerts
+│       │       ├── ConfirmationAlertPractice.java
+│       │       ├── PromptAlertPractice.java
+│       │       ├── SimpleAlertPractice.java
+│       │       └── AlertHandlingUsingWait.java
+│       │
 │       └── resources
 │
 ├── pom.xml
@@ -55,17 +68,30 @@ SeleniumJavaPractice
 - Broken Images
 - Tool Tips
 
+### Dropdowns
+
+- Handling Select Dropdowns using Selenium `Select` class
+- Handling Dynamic Dropdowns
+- Handling Multi Select Dropdowns
+- Handling Auto Suggestion Dropdowns
+
+### Alerts
+
+- Simple JavaScript Alerts
+- Confirmation Alerts (Accept/Dismiss)
+- Prompt Alerts (sendKeys handling)
+- Handling Alerts using Explicit Wait
+
 ## Project Design
 
 - Common browser setup is maintained in a reusable `BaseClass`.
-- Test classes are organized by topic.
+- Test classes are organized topic-wise using separate packages.
 - Maven is used for dependency management.
-- The project is structured to support future expansion using Page Object Model (POM).
+- TestNG is used for assertions and test execution.
+- The project structure is designed to support future expansion using Page Object Model (POM).
 
 ## Upcoming Topics
 
-- Dropdowns
-- Alerts
 - Frames
 - Window Handling
 - Actions Class
@@ -73,7 +99,10 @@ SeleniumJavaPractice
 - JavaScript Executor
 - Web Tables
 - File Upload & Download
-- TestNG
+- TestNG Framework
+- Page Object Model (POM)
+- Data Driven Testing
+- CI/CD Integration
 
 ## How to Run
 
@@ -81,11 +110,12 @@ SeleniumJavaPractice
 2. Import it as a Maven project in Eclipse.
 3. Update Maven dependencies.
 4. Run the required test class.
+5. Execute TestNG tests as the framework expands.
 
 ## Learning Goal
 
-This repository documents my journey in learning Selenium automation and serves as a reference for practicing Selenium WebDriver concepts with Java and TestNG.
+This repository documents my journey in learning Selenium automation and serves as a reference for practicing Selenium WebDriver concepts using Java, Maven, and TestNG.
 
 ## Author
 
-**Rani**
+Rani
