@@ -1,13 +1,12 @@
 # Selenium Java Practice
 
-This repository contains my hands-on Selenium WebDriver practice using **Java**, **Maven**, and **TestNG**. The project is organized topic-wise as I progress through different Selenium automation concepts.
+This repository contains my hands-on Selenium WebDriver practice using **Java** and **Maven**. The project is organized topic-wise as I learn and implement different Selenium WebDriver concepts through practical examples.
 
 ## Technologies Used
 
 - Java
 - Selenium WebDriver
 - Maven
-- TestNG
 - Git
 - GitHub
 
@@ -43,11 +42,28 @@ SeleniumJavaPractice
 │       │   │   ├── MultiSelectDropdownPractice.java
 │       │   │   └── AutoSuggestionDropdownPractice.java
 │       │   │
-│       │   └── alerts
-│       │       ├── ConfirmationAlertPractice.java
-│       │       ├── PromptAlertPractice.java
-│       │       ├── SimpleAlertPractice.java
-│       │       └── AlertHandlingUsingWait.java
+│       │   ├── alerts
+│       │   │   ├── SimpleAlertPractice.java
+│       │   │   ├── ConfirmationAlertPractice.java
+│       │   │   ├── PromptAlertPractice.java
+│       │   │   └── AlertHandlingUsingWait.java
+│       │   │
+│       │   ├── actionsclass
+│       │   │   ├── ContextClickPractice.java
+│       │   │   ├── DoubleClickPractice.java
+│       │   │   ├── DragAndDropPractice.java
+│       │   │   ├── DragAndDropUsingActions.java
+│       │   │   ├── KeyboardActionPractice.java
+│       │   │   ├── MouseHoverPractice.java
+│       │   │   └── SliderPractice.java
+│       │   │
+│       │   ├── frames
+│       │   │   ├── SingleFramePractice.java
+│       │   │   └── NestedFramesPractice.java
+│       │   │
+│       │   └── windowhandling
+│       │       ├── SingleWindowPractice.java
+│       │       └── MultipleWindowsPractice.java
 │       │
 │       └── resources
 │
@@ -70,36 +86,52 @@ SeleniumJavaPractice
 
 ### Dropdowns
 
-- Handling Select Dropdowns using Selenium `Select` class
-- Handling Dynamic Dropdowns
-- Handling Multi Select Dropdowns
-- Handling Auto Suggestion Dropdowns
+- Select Dropdowns
+- Dynamic Dropdowns
+- Multi Select Dropdowns
+- Auto Suggestion Dropdowns
 
 ### Alerts
 
 - Simple JavaScript Alerts
-- Confirmation Alerts (Accept/Dismiss)
-- Prompt Alerts (sendKeys handling)
+- Confirmation Alerts
+- Prompt Alerts
 - Handling Alerts using Explicit Wait
+
+### Frames
+
+- Single Frame Handling
+- Nested Frames
+
+### Window Handling
+
+- Single Window Handling
+- Multiple Window Handling
+
+### Actions Class
+
+- Mouse Hover
+- Double Click
+- Context Click (Right Click)
+- Drag and Drop
+- Drag and Drop using Actions Class
+- Keyboard Actions
+- Slider Handling
 
 ## Project Design
 
 - Common browser setup is maintained in a reusable `BaseClass`.
-- Test classes are organized topic-wise using separate packages.
+- Test classes are organized topic-wise into separate packages.
 - Maven is used for dependency management.
-- TestNG is used for assertions and test execution.
-- The project structure is designed to support future expansion using Page Object Model (POM).
+- The project structure is designed to support future expansion using the Page Object Model (POM).
 
 ## Upcoming Topics
 
-- Frames
-- Window Handling
-- Actions Class
 - Waits
 - JavaScript Executor
 - Web Tables
 - File Upload & Download
-- TestNG Framework
+- TestNG
 - Page Object Model (POM)
 - Data Driven Testing
 - CI/CD Integration
@@ -109,13 +141,12 @@ SeleniumJavaPractice
 1. Clone the repository.
 2. Import it as a Maven project in Eclipse.
 3. Update Maven dependencies.
-4. Run the required test class.
-5. Execute TestNG tests as the framework expands.
+4. Run the desired Java class as a Java Application.
 
 ## Learning Goal
 
-This repository documents my journey in learning Selenium automation and serves as a reference for practicing Selenium WebDriver concepts using Java, Maven, and TestNG.
+This repository documents my journey of learning Selenium WebDriver through hands-on practice. Each package focuses on a specific Selenium concept, making it easy to revisit topics and track my progress as I continue learning automation testing.
 
 ## Author
 
-Rani
+**Rani**
