@@ -1,12 +1,13 @@
 # Selenium Java Practice
 
-This repository contains my hands-on Selenium WebDriver practice using **Java** and **Maven**. The project is organized topic-wise as I learn and implement different Selenium WebDriver concepts through practical examples.
+This repository contains my hands-on Selenium WebDriver practice using **Java**, **Maven**, and **TestNG**. The project is organized topic-wise as I progress through different Selenium automation concepts.
 
 ## Technologies Used
 
 - Java
 - Selenium WebDriver
 - Maven
+- TestNG
 - Git
 - GitHub
 
@@ -48,22 +49,30 @@ SeleniumJavaPractice
 │       │   │   ├── PromptAlertPractice.java
 │       │   │   └── AlertHandlingUsingWait.java
 │       │   │
-│       │   ├── actionsclass
-│       │   │   ├── ContextClickPractice.java
-│       │   │   ├── DoubleClickPractice.java
-│       │   │   ├── DragAndDropPractice.java
-│       │   │   ├── DragAndDropUsingActions.java
-│       │   │   ├── KeyboardActionPractice.java
-│       │   │   ├── MouseHoverPractice.java
-│       │   │   └── SliderPractice.java
-│       │   │
 │       │   ├── frames
 │       │   │   ├── SingleFramePractice.java
-│       │   │   └── NestedFramesPractice.java
+│       │   │   ├── NestedFramesPractice.java
+│       │   │   └── MultipleFramesPractice.java
 │       │   │
-│       │   └── windowhandling
-│       │       ├── SingleWindowPractice.java
-│       │       └── MultipleWindowsPractice.java
+│       │   ├── windowhandling
+│       │   │   ├── SingleWindowPractice.java
+│       │   │   └── MultipleWindowPractice.java
+│       │   │
+│       │   ├── actionsclass
+│       │   │   ├── MouseHoverPractice.java
+│       │   │   ├── RightClickPractice.java
+│       │   │   ├── DoubleClickPractice.java
+│       │   │   ├── DragAndDropPractice.java
+│       │   │   ├── ClickAndHoldPractice.java
+│       │   │   └── KeyboardActionsPractice.java
+│       │   │
+│       │   └── javascriptexecutor
+│       │       ├── HighlightElementPractice.java
+│       │       ├── JavaScriptClickPractice.java
+│       │       ├── JavaScriptSendKeysPractice.java
+│       │       ├── ScrollToElementPractice.java
+│       │       ├── ScrollToBottomPractice.java
+│       │       └── ScrollToTopPractice.java
 │       │
 │       └── resources
 │
@@ -71,7 +80,7 @@ SeleniumJavaPractice
 └── README.md
 ```
 
-## Topics Completed
+## Topics Covered
 
 ### Web Elements
 
@@ -96,42 +105,58 @@ SeleniumJavaPractice
 - Simple JavaScript Alerts
 - Confirmation Alerts
 - Prompt Alerts
-- Handling Alerts using Explicit Wait
+- Alert Handling using Explicit Wait
 
 ### Frames
 
-- Single Frame Handling
-- Nested Frames
+- Switching to Frames using Index
+- Switching to Frames using Name/ID
+- Switching to Frames using WebElement
+- Switching Back to Default Content
 
 ### Window Handling
 
 - Single Window Handling
 - Multiple Window Handling
+- Switching Between Browser Windows
+- Closing Parent and Child Windows
 
 ### Actions Class
 
 - Mouse Hover
+- Right Click (Context Click)
 - Double Click
-- Context Click (Right Click)
 - Drag and Drop
-- Drag and Drop using Actions Class
+- Click and Hold
 - Keyboard Actions
-- Slider Handling
+
+### JavaScript Executor
+
+- Click Using JavaScript
+- Enter Text Using JavaScript
+- Highlight Web Elements
+- Scroll to an Element
+- Scroll to the Bottom of the Page
+
 
 ## Project Design
 
 - Common browser setup is maintained in a reusable `BaseClass`.
-- Test classes are organized topic-wise into separate packages.
+- Test classes are organized topic-wise using separate packages.
 - Maven is used for dependency management.
-- The project structure is designed to support future expansion using the Page Object Model (POM).
+- TestNG is used for assertions and test execution.
+- The project structure is designed to support future expansion using Page Object Model (POM).
 
 ## Upcoming Topics
 
+- Frames
+- Window Handling
+- Actions Class
 - Waits
 - JavaScript Executor
 - Web Tables
 - File Upload & Download
-- TestNG
+- TestNG Framework
 - Page Object Model (POM)
 - Data Driven Testing
 - CI/CD Integration
@@ -141,12 +166,13 @@ SeleniumJavaPractice
 1. Clone the repository.
 2. Import it as a Maven project in Eclipse.
 3. Update Maven dependencies.
-4. Run the desired Java class as a Java Application.
+4. Run the required test class.
+5. Execute TestNG tests as the framework expands.
 
 ## Learning Goal
 
-This repository documents my journey of learning Selenium WebDriver through hands-on practice. Each package focuses on a specific Selenium concept, making it easy to revisit topics and track my progress as I continue learning automation testing.
+This repository documents my journey in learning Selenium automation and serves as a reference for practicing Selenium WebDriver concepts using Java, Maven, and TestNG.
 
 ## Author
 
-**Rani**
+Rani
