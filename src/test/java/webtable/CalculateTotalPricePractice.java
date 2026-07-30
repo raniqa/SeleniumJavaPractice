@@ -1,0 +1,56 @@
+package webtable;
+
+import java.util.List;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebElement;
+
+import base.BaseClass;
+
+public class CalculateTotalPricePractice extends BaseClass {
+
+	public static void main(String[] args) throws InterruptedException {
+
+		// Create object of current class
+		CalculateTotalPricePractice tablePractice = new CalculateTotalPricePractice();
+
+		// Launch browser
+		tablePractice.launchBrowser();
+
+		// Navigate to application
+		tablePractice.navigateTo("https://testautomationpractice.blogspot.com/");
+
+		// Scroll to the Book Table
+		WebElement bookTable = tablePractice.driver.findElement(By.xpath("//table[@name='BookTable']"));
+
+		JavascriptExecutor js = (JavascriptExecutor) tablePractice.driver;
+		js.executeScript("arguments[0].scrollIntoView(true);", bookTable);
+
+		Thread.sleep(3000);
+
+		// Count the number of data rows
+		List<WebElement> rows = tablePractice.driver
+				.findElements(By.xpath("//table[@name='BookTable']//tr[position()>1]"));
+
+		int totalPrice = 0;
+
+		// Calculate the total price of all books
+		for (int r = 2; r <= rows.size() + 1; r++) {
+
+			WebElement priceCell = tablePractice.driver
+					.findElement(By.xpath("//table[@name='BookTable']//tr[" + r + "]/td[4]"));
+
+			int price = Integer.parseInt(priceCell.getText());
+
+			totalPrice += price;
+		}
+
+		System.out.println("Total Price of All Books : " + totalPrice);
+
+		Thread.sleep(3000);
+
+		// Close browser
+		tablePractice.closeBrowser();
+	}
+}
