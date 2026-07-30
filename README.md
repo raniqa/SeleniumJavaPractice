@@ -17,17 +17,26 @@ This repository contains my hands-on Selenium WebDriver practice using **Java**,
 SeleniumJavaPractice
 │
 ├── src
+│   │
 │   ├── main
+│   │   │
 │   │   ├── java
+│   │   │   │
 │   │   │   ├── base
 │   │   │   │   └── BaseClass.java
+│   │   │   │
 │   │   │   ├── pages
+│   │   │   │
 │   │   │   └── utilities
+│   │   │
 │   │   └── resources
 │   │
+│   │
 │   └── test
+│       │
 │       ├── java
-│       │   ├── webelements
+│       │   │
+│       │   ├── webelementbasics
 │       │   │   ├── TextBoxPractice.java
 │       │   │   ├── ButtonPractice.java
 │       │   │   ├── CheckBoxPractice.java
@@ -42,6 +51,12 @@ SeleniumJavaPractice
 │       │   │   ├── DynamicDropdownPractice.java
 │       │   │   ├── MultiSelectDropdownPractice.java
 │       │   │   └── AutoSuggestionDropdownPractice.java
+│       │   │
+│       │   ├── waits
+│       │   │   ├── ImplicitWaitPractice.java
+│       │   │   ├── ExplicitWaitPractice.java
+│       │   │   ├── FluentWaitPractice.java
+│       │   │   └── ExpectedConditionsPractice.java
 │       │   │
 │       │   ├── alerts
 │       │   │   ├── SimpleAlertPractice.java
@@ -66,17 +81,29 @@ SeleniumJavaPractice
 │       │   │   ├── ClickAndHoldPractice.java
 │       │   │   └── KeyboardActionsPractice.java
 │       │   │
-│       │   └── javascriptexecutor
-│       │       ├── HighlightElementPractice.java
-│       │       ├── JavaScriptClickPractice.java
-│       │       ├── JavaScriptSendKeysPractice.java
-│       │       ├── ScrollToElementPractice.java
-│       │       ├── ScrollToBottomPractice.java
-│       │       └── ScrollToTopPractice.java
+│       │   ├── javascriptexecutor
+│       │   │   ├── HighlightElementPractice.java
+│       │   │   ├── JavaScriptClickPractice.java
+│       │   │   ├── JavaScriptSendKeysPractice.java
+│       │   │   ├── ScrollToElementPractice.java
+│       │   │   ├── ScrollToBottomPractice.java
+│       │   │   └── ScrollToTopPractice.java
+│       │   │
+│       │   └── webtable
+│       │       ├── StaticWebTablePractice.java
+│       │       ├── DynamicWebTablePractice.java
+│       │       ├── PrintTableDataPractice.java
+│       │       ├── PrintBookNamesPractice.java
+│       │       ├── ReadSpecificCellPractice.java
+│       │       ├── CountSeleniumBooksPractice.java
+│       │       ├── CalculateTotalPricePractice.java
+│       │       ├── BooksAbovePricePractice.java
+│       │       └── HighestPricedBookPractice.java
 │       │
 │       └── resources
 │
 ├── pom.xml
+│
 └── README.md
 ```
 
@@ -138,6 +165,26 @@ SeleniumJavaPractice
 - Scroll to an Element
 - Scroll to the Bottom of the Page
 
+### Wait Handling
+
+- Implicit Wait
+- Explicit Wait
+- Fluent Wait
+- ExpectedConditions Usage
+
+### Web Tables
+
+- Static Web Table Handling
+- Dynamic Web Table Handling
+- Finding Row and Column Count Dynamically
+- Printing Complete Table Data
+- Reading Specific Cell Values
+- Extracting Data Based on Conditions
+- Dynamic XPath Handling
+- XPath Axes (`following-sibling`)
+- Performing Calculations Using Table Data
+- Filtering Table Data Based on Conditions
+
 
 ## Project Design
 
@@ -149,12 +196,6 @@ SeleniumJavaPractice
 
 ## Upcoming Topics
 
-- Frames
-- Window Handling
-- Actions Class
-- Waits
-- JavaScript Executor
-- Web Tables
 - File Upload & Download
 - TestNG Framework
 - Page Object Model (POM)
