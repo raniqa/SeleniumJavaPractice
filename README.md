@@ -1,17 +1,20 @@
-# Selenium Java Practice
+# Selenium Java Practice 
 
-This repository contains my hands-on Selenium WebDriver practice using **Java**, **Maven**, and **TestNG**. The project is organized topic-wise as I progress through different Selenium automation concepts.
+This repository contains my hands-on Selenium WebDriver practice using **Java** and **Maven**. The project is organized topic-wise as I progress through different Selenium automation concepts. It is continuously updated as I learn and implement new Selenium features and best practices.
 
-## Technologies Used
+---
+
+# Technologies Used
 
 - Java
 - Selenium WebDriver
 - Maven
-- TestNG
 - Git
 - GitHub
 
-## Project Structure
+---
+
+# Project Structure
 
 ```text
 SeleniumJavaPractice
@@ -30,7 +33,6 @@ SeleniumJavaPractice
 │   │   │   └── utilities
 │   │   │
 │   │   └── resources
-│   │
 │   │
 │   └── test
 │       │
@@ -89,16 +91,22 @@ SeleniumJavaPractice
 │       │   │   ├── ScrollToBottomPractice.java
 │       │   │   └── ScrollToTopPractice.java
 │       │   │
-│       │   └── webtable
-│       │       ├── StaticWebTablePractice.java
-│       │       ├── DynamicWebTablePractice.java
-│       │       ├── PrintTableDataPractice.java
-│       │       ├── PrintBookNamesPractice.java
-│       │       ├── ReadSpecificCellPractice.java
-│       │       ├── CountSeleniumBooksPractice.java
-│       │       ├── CalculateTotalPricePractice.java
-│       │       ├── BooksAbovePricePractice.java
-│       │       └── HighestPricedBookPractice.java
+│       │   ├── webtable
+│       │   │   ├── StaticWebTablePractice.java
+│       │   │   ├── DynamicWebTablePractice.java
+│       │   │   ├── PrintTableDataPractice.java
+│       │   │   ├── PrintBookNamesPractice.java
+│       │   │   ├── ReadSpecificCellPractice.java
+│       │   │   ├── CountSeleniumBooksPractice.java
+│       │   │   ├── CalculateTotalPricePractice.java
+│       │   │   ├── BooksAbovePricePractice.java
+│       │   │   └── HighestPricedBookPractice.java
+│       │   │
+│       │   └── datepicker
+│       │       ├── HTMLDatePickerPractice.java
+│       │       ├── DateTimePicker.java
+│       │       ├── CustomCalendarNextPrevious.java
+│       │       └── CustomCalendarMonthYearDropdown.java
 │       │
 │       └── resources
 │
@@ -107,9 +115,11 @@ SeleniumJavaPractice
 └── README.md
 ```
 
-## Topics Covered
+---
 
-### Web Elements
+# Topics Covered
+
+## Web Elements
 
 - Text Box
 - Buttons
@@ -120,35 +130,54 @@ SeleniumJavaPractice
 - Broken Images
 - Tool Tips
 
-### Dropdowns
+---
+
+## Dropdowns
 
 - Select Dropdowns
 - Dynamic Dropdowns
 - Multi Select Dropdowns
 - Auto Suggestion Dropdowns
 
-### Alerts
+---
+
+## Wait Handling
+
+- Implicit Wait
+- Explicit Wait
+- Fluent Wait
+- ExpectedConditions
+
+---
+
+## Alerts
 
 - Simple JavaScript Alerts
 - Confirmation Alerts
 - Prompt Alerts
 - Alert Handling using Explicit Wait
 
-### Frames
+---
+
+## Frames
 
 - Switching to Frames using Index
 - Switching to Frames using Name/ID
 - Switching to Frames using WebElement
+- Nested Frames
 - Switching Back to Default Content
 
-### Window Handling
+---
+
+## Window Handling
 
 - Single Window Handling
 - Multiple Window Handling
-- Switching Between Browser Windows
-- Closing Parent and Child Windows
+- Switching Between Parent and Child Windows
 
-### Actions Class
+---
+
+## Actions Class
 
 - Mouse Hover
 - Right Click (Context Click)
@@ -157,22 +186,20 @@ SeleniumJavaPractice
 - Click and Hold
 - Keyboard Actions
 
-### JavaScript Executor
+---
+
+## JavaScript Executor
 
 - Click Using JavaScript
 - Enter Text Using JavaScript
 - Highlight Web Elements
 - Scroll to an Element
 - Scroll to the Bottom of the Page
+- Scroll to the Top of the Page
 
-### Wait Handling
+---
 
-- Implicit Wait
-- Explicit Wait
-- Fluent Wait
-- ExpectedConditions Usage
-
-### Web Tables
+## Web Tables
 
 - Static Web Table Handling
 - Dynamic Web Table Handling
@@ -185,35 +212,60 @@ SeleniumJavaPractice
 - Performing Calculations Using Table Data
 - Filtering Table Data Based on Conditions
 
+---
 
-## Project Design
+## Date Picker
+
+- HTML Date Picker
+- Date & Time Picker
+- Custom Calendar using Next/Previous Navigation
+- Custom Calendar using Month & Year Dropdowns
+
+---
+
+# Project Design
 
 - Common browser setup is maintained in a reusable `BaseClass`.
 - Test classes are organized topic-wise using separate packages.
 - Maven is used for dependency management.
-- TestNG is used for assertions and test execution.
-- The project structure is designed to support future expansion using Page Object Model (POM).
+- The project structure is designed to support future expansion using the Page Object Model (POM).
 
-## Upcoming Topics
+---
+
+# Upcoming Topics
 
 - File Upload & Download
-- TestNG Framework
+- Chrome Options
+- SVG Elements
+- Shadow DOM
+- TestNG
 - Page Object Model (POM)
 - Data Driven Testing
-- CI/CD Integration
+- Apache POI (Excel)
+- Log4j
+- Extent Reports
+- Jenkins CI/CD
+- Selenium Grid
 
-## How to Run
+---
+
+# How to Run
 
 1. Clone the repository.
 2. Import it as a Maven project in Eclipse.
 3. Update Maven dependencies.
-4. Run the required test class.
-5. Execute TestNG tests as the framework expands.
+4. Run the required Java class as a **Java Application**.
 
-## Learning Goal
+---
 
-This repository documents my journey in learning Selenium automation and serves as a reference for practicing Selenium WebDriver concepts using Java, Maven, and TestNG.
+# Learning Goal
 
-## Author
+This repository documents my journey in learning Selenium automation and serves as a reference for practicing Selenium WebDriver concepts using Java and Maven. It will continue to evolve as I progress toward building a complete automation framework.
 
-Rani
+---
+
+# Author
+
+**Rani**
+
+Aspiring QA Automation Engineer | Java | Selenium WebDriver | Maven | Git | GitHub | ISTQB CTFL & CTFL-AT Certified
