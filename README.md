@@ -102,11 +102,17 @@ SeleniumJavaPractice
 │       │   │   ├── BooksAbovePricePractice.java
 │       │   │   └── HighestPricedBookPractice.java
 │       │   │
-│       │   └── datepicker
-│       │       ├── HTMLDatePickerPractice.java
-│       │       ├── DateTimePicker.java
-│       │       ├── CustomCalendarNextPrevious.java
-│       │       └── CustomCalendarMonthYearDropdown.java
+│       │   ├── datepicker
+│       │   │   ├── HTMLDatePickerPractice.java
+│       │   │   ├── DateTimePicker.java
+│       │   │   ├── CustomCalendarNextPrevious.java
+│       │   │   └── CustomCalendarMonthYearDropdown.java
+│       │   │
+│       │   └── chromeoptions
+│       │       ├── BrowserWindowOptionsPractice.java
+│       │       ├── BrowserSecurityOptionsPractice.java
+│       │       ├── DisablePasswordManagerPractice.java
+│       │       └── RemoveAutomationMessagePractice.java
 │       │
 │       └── resources
 │
@@ -223,6 +229,26 @@ SeleniumJavaPractice
 
 ---
 
+## Chrome Options
+
+- Browser Window Options
+  - Start Maximized
+  - Incognito Mode
+  - Headless Mode
+    
+- Browser Security Options
+  - Disable Notifications
+  - Disable Location Permission
+  - Disable Camera Permission
+  - Disable Microphone Permission
+
+- Disable Password Manager
+  - Disable "Save Password" Prompt
+  - Disable Password Leak Detection
+
+- Remove Automation Message
+  - Remove the "Chrome is being controlled by automated test software" infobar
+
 # Project Design
 
 - Common browser setup is maintained in a reusable `BaseClass`.
@@ -235,7 +261,6 @@ SeleniumJavaPractice
 # Upcoming Topics
 
 - File Upload & Download
-- Chrome Options
 - SVG Elements
 - Shadow DOM
 - TestNG
