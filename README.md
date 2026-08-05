@@ -108,15 +108,39 @@ SeleniumJavaPractice
 │       │   │   ├── CustomCalendarNextPrevious.java
 │       │   │   └── CustomCalendarMonthYearDropdown.java
 │       │   │
-│       │   └── chromeoptions
-│       │       ├── BrowserWindowOptionsPractice.java
-│       │       ├── BrowserSecurityOptionsPractice.java
-│       │       ├── DisablePasswordManagerPractice.java
-│       │       └── RemoveAutomationMessagePractice.java
+│       │   ├── chromeoptions
+│       │   │   ├── BrowserWindowOptionsPractice.java
+│       │   │   ├── BrowserSecurityOptionsPractice.java
+│       │   │   ├── DisablePasswordManagerPractice.java
+│       │   │   └── RemoveAutomationMessagePractice.java
+│       │   │
+│       │   ├── testng
+│       │   │   ├── TestNGIntroPractice.java
+│       │   │   ├── TestNGAnnotationsPractice.java
+│       │   │   ├── AlwaysRunAttributePractice.java
+│       │   │   ├── DependsOnMethodsPractice.java
+│       │   │   ├── DescriptionAttributePractice.java
+│       │   │   ├── EnabledAttributePractice.java
+│       │   │   ├── TimeoutAttributePractice.java
+│       │   │   ├── HardAssertPractice.java
+│       │   │   └── SoftAssertPractice.java
+│       │   │
+│       │   ├── filehandling
+│       │   │   ├── FileUploadPractice.java
+│       │   │   └── FileDownloadPractice.java
+│       │   │
+│       │   ├── svg
+│       │   │   └── SVGElementPractice.java
+│       │   │
+│       │   └── shadowdom
+│       │       ├── ShadowDOMPractice.java
+│       │       └── NestedShadowDOMPractice.java
 │       │
 │       └── resources
 │
 ├── pom.xml
+│
+├── testng.xml
 │
 └── README.md
 ```
@@ -248,6 +272,72 @@ SeleniumJavaPractice
 
 - Remove Automation Message
   - Remove the "Chrome is being controlled by automated test software" infobar
+  
+---
+
+## TestNG Framework
+
+### TestNG Introduction
+
+- Introduction to TestNG
+- Advantages of TestNG over JUnit
+- TestNG Test Execution Flow
+
+---
+
+### TestNG Annotations
+
+- `@Test`
+- `@BeforeTest`
+- `@AfterTest`
+- `@BeforeMethod`
+- `@AfterMethod`
+- `@BeforeClass`
+- `@AfterClass`
+- Understanding Annotation Execution Order
+
+---
+
+### TestNG Attributes
+
+- Priority Attribute
+  - Controlling Test Execution Order
+
+- Description Attribute
+  - Adding Description to Test Methods
+
+- Enabled Attribute
+  - Enabling and Disabling Test Methods
+
+- Timeout Attribute
+  - Handling Test Execution Time Limits
+
+- DependsOnMethods Attribute
+  - Creating Test Dependencies
+
+- AlwaysRun Attribute
+  - Executing Methods Regardless of Dependency Failure
+
+---
+
+### TestNG Assertions
+
+#### Hard Assertions
+
+- Validating Test Results using Hard Assert
+- `assertEquals()`
+- `assertNotEquals()`
+- `assertTrue()`
+- `assertFalse()`
+- Test Execution Behavior When Hard Assertion Fails
+
+#### Soft Assertions
+
+- Validating Multiple Conditions in a Single Test
+- Using `SoftAssert`
+- Difference Between Hard Assert and Soft Assert
+- `assertAll()` Method
+- Test Execution Behavior When Soft Assertion Fails  
 
 # Project Design
 
@@ -263,7 +353,7 @@ SeleniumJavaPractice
 - File Upload & Download
 - SVG Elements
 - Shadow DOM
-- TestNG
+- TestNG (Ongoing)
 - Page Object Model (POM)
 - Data Driven Testing
 - Apache POI (Excel)
