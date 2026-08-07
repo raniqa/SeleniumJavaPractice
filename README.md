@@ -114,34 +114,23 @@ SeleniumJavaPractice
 │       │   │   ├── DisablePasswordManagerPractice.java
 │       │   │   └── RemoveAutomationMessagePractice.java
 │       │   │
-│       │   ├── testng
-│       │   │   ├── TestNGIntroPractice.java
-│       │   │   ├── TestNGAnnotationsPractice.java
-│       │   │   ├── AlwaysRunAttributePractice.java
-│       │   │   ├── DependsOnMethodsPractice.java
-│       │   │   ├── DescriptionAttributePractice.java
-│       │   │   ├── EnabledAttributePractice.java
-│       │   │   ├── TimeoutAttributePractice.java
-│       │   │   ├── HardAssertPractice.java
-│       │   │   └── SoftAssertPractice.java
-│       │   │
-│       │   ├── filehandling
-│       │   │   ├── FileUploadPractice.java
-│       │   │   └── FileDownloadPractice.java
-│       │   │
-│       │   ├── svg
-│       │   │   └── SVGElementPractice.java
-│       │   │
-│       │   └── shadowdom
-│       │       ├── ShadowDOMPractice.java
-│       │       └── NestedShadowDOMPractice.java
+│       │   └── testng
+│       │       ├── TestNGIntroPractice.java
+│       │       ├── TestNGAnnotationsPractice.java
+│       │       ├── AlwaysRunAttributePractice.java
+│       │       ├── DependsOnMethodsPractice.java
+│       │       ├── DescriptionAttributePractice.java
+│       │       ├── EnabledAttributePractice.java
+│       │       ├── TimeoutAttributePractice.java
+│       │       ├── HardAssertPractice.java
+│       │       ├── SoftAssertPractice.java
+│       │       ├── DataProviderLoginPractice.java
+│       │       └── DataProviderSearchProductPractice.java
 │       │
 │       └── resources
 │
 ├── pom.xml
-│
 ├── testng.xml
-│
 └── README.md
 ```
 
@@ -151,216 +140,277 @@ SeleniumJavaPractice
 
 ## Web Elements
 
-- Text Box
-- Buttons
-- Check Boxes
-- Radio Buttons
-- Links
-- Broken Links
-- Broken Images
-- Tool Tips
+* Text Box
+* Buttons
+* Check Boxes
+* Radio Buttons
+* Links
+* Broken Links
+* Broken Images
+* Tool Tips
 
 ---
 
 ## Dropdowns
 
-- Select Dropdowns
-- Dynamic Dropdowns
-- Multi Select Dropdowns
-- Auto Suggestion Dropdowns
+* Select Dropdowns
+* Dynamic Dropdowns
+* Multi Select Dropdowns
+* Auto Suggestion Dropdowns
 
 ---
 
 ## Wait Handling
 
-- Implicit Wait
-- Explicit Wait
-- Fluent Wait
-- ExpectedConditions
+* Implicit Wait
+* Explicit Wait
+* Fluent Wait
+* ExpectedConditions
 
 ---
 
 ## Alerts
 
-- Simple JavaScript Alerts
-- Confirmation Alerts
-- Prompt Alerts
-- Alert Handling using Explicit Wait
+* Simple JavaScript Alerts
+* Confirmation Alerts
+* Prompt Alerts
+* Alert Handling using Explicit Wait
 
 ---
 
 ## Frames
 
-- Switching to Frames using Index
-- Switching to Frames using Name/ID
-- Switching to Frames using WebElement
-- Nested Frames
-- Switching Back to Default Content
+* Switching to Frames using Index
+* Switching to Frames using Name/ID
+* Switching to Frames using WebElement
+* Nested Frames
+* Switching Back to Default Content
 
 ---
 
 ## Window Handling
 
-- Single Window Handling
-- Multiple Window Handling
-- Switching Between Parent and Child Windows
+* Single Window Handling
+* Multiple Window Handling
+* Switching Between Parent and Child Windows
 
 ---
 
 ## Actions Class
 
-- Mouse Hover
-- Right Click (Context Click)
-- Double Click
-- Drag and Drop
-- Click and Hold
-- Keyboard Actions
+* Mouse Hover
+* Right Click (Context Click)
+* Double Click
+* Drag and Drop
+* Click and Hold
+* Keyboard Actions
 
 ---
 
 ## JavaScript Executor
 
-- Click Using JavaScript
-- Enter Text Using JavaScript
-- Highlight Web Elements
-- Scroll to an Element
-- Scroll to the Bottom of the Page
-- Scroll to the Top of the Page
+* Click Using JavaScript
+* Enter Text Using JavaScript
+* Highlight Web Elements
+* Scroll to an Element
+* Scroll to the Bottom of the Page
+* Scroll to the Top of the Page
 
 ---
 
 ## Web Tables
 
-- Static Web Table Handling
-- Dynamic Web Table Handling
-- Finding Row and Column Count Dynamically
-- Printing Complete Table Data
-- Reading Specific Cell Values
-- Extracting Data Based on Conditions
-- Dynamic XPath Handling
-- XPath Axes (`following-sibling`)
-- Performing Calculations Using Table Data
-- Filtering Table Data Based on Conditions
+* Static Web Table Handling
+* Dynamic Web Table Handling
+* Finding Row and Column Count Dynamically
+* Printing Complete Table Data
+* Reading Specific Cell Values
+* Extracting Data Based on Conditions
+* Dynamic XPath Handling
+* XPath Axes (`following-sibling`)
+* Performing Calculations Using Table Data
+* Filtering Table Data Based on Conditions
 
 ---
 
 ## Date Picker
 
-- HTML Date Picker
-- Date & Time Picker
-- Custom Calendar using Next/Previous Navigation
-- Custom Calendar using Month & Year Dropdowns
+* HTML Date Picker
+* Date & Time Picker
+* Custom Calendar using Next/Previous Navigation
+* Custom Calendar using Month & Year Dropdowns
 
 ---
 
 ## Chrome Options
 
-- Browser Window Options
-  - Start Maximized
-  - Incognito Mode
-  - Headless Mode
-    
-- Browser Security Options
-  - Disable Notifications
-  - Disable Location Permission
-  - Disable Camera Permission
-  - Disable Microphone Permission
+* Browser Window Options
 
-- Disable Password Manager
-  - Disable "Save Password" Prompt
-  - Disable Password Leak Detection
+  * Start Maximized
+  * Incognito Mode
+  * Headless Mode
 
-- Remove Automation Message
-  - Remove the "Chrome is being controlled by automated test software" infobar
-  
----
+* Browser Security Options
 
-## TestNG Framework
+  * Disable Notifications
+  * Disable Location Permission
+  * Disable Camera Permission
+  * Disable Microphone Permission
 
-### TestNG Introduction
+* Disable Password Manager
 
-- Introduction to TestNG
-- Advantages of TestNG over JUnit
-- TestNG Test Execution Flow
+  * Disable "Save Password" Prompt
+  * Disable Password Leak Detection
+
+* Remove Automation Message
+
+  * Remove the "Chrome is being controlled by automated test software" infobar
 
 ---
 
-### TestNG Annotations
+# TestNG Framework
 
-- `@Test`
-- `@BeforeTest`
-- `@AfterTest`
-- `@BeforeMethod`
-- `@AfterMethod`
-- `@BeforeClass`
-- `@AfterClass`
-- Understanding Annotation Execution Order
+## TestNG Introduction
+
+* Introduction to TestNG
+* Advantages of TestNG over JUnit
+* TestNG Test Execution Flow
 
 ---
 
-### TestNG Attributes
+## TestNG Annotations
 
-- Priority Attribute
-  - Controlling Test Execution Order
-
-- Description Attribute
-  - Adding Description to Test Methods
-
-- Enabled Attribute
-  - Enabling and Disabling Test Methods
-
-- Timeout Attribute
-  - Handling Test Execution Time Limits
-
-- DependsOnMethods Attribute
-  - Creating Test Dependencies
-
-- AlwaysRun Attribute
-  - Executing Methods Regardless of Dependency Failure
+* `@Test`
+* `@BeforeTest`
+* `@AfterTest`
+* `@BeforeMethod`
+* `@AfterMethod`
+* `@BeforeClass`
+* `@AfterClass`
+* Understanding Annotation Execution Order
 
 ---
 
-### TestNG Assertions
+## TestNG Attributes
 
-#### Hard Assertions
+### Priority
 
-- Validating Test Results using Hard Assert
-- `assertEquals()`
-- `assertNotEquals()`
-- `assertTrue()`
-- `assertFalse()`
-- Test Execution Behavior When Hard Assertion Fails
+* Controlling Test Execution Order
 
-#### Soft Assertions
+### Description
 
-- Validating Multiple Conditions in a Single Test
-- Using `SoftAssert`
-- Difference Between Hard Assert and Soft Assert
-- `assertAll()` Method
-- Test Execution Behavior When Soft Assertion Fails  
+* Adding Description to Test Methods
+
+### Enabled
+
+* Enabling and Disabling Test Methods
+
+### Timeout
+
+* Handling Test Execution Time Limits
+
+### DependsOnMethods
+
+* Creating Test Dependencies
+
+### AlwaysRun
+
+* Executing Methods Regardless of Dependency Failure
+
+---
+
+## TestNG Assertions
+
+### Hard Assertions
+
+* Validating Test Results using Hard Assert
+* `assertEquals()`
+* `assertNotEquals()`
+* `assertTrue()`
+* `assertFalse()`
+* Test Execution Behavior When Hard Assertion Fails
+
+### Soft Assertions
+
+* Validating Multiple Conditions in a Single Test
+* Using `SoftAssert`
+* Difference Between Hard Assert and Soft Assert
+* `assertAll()` Method
+* Test Execution Behavior When Soft Assertion Fails
+
+---
+
+## TestNG DataProvider
+
+* Introduction to `@DataProvider`
+* Data-Driven Testing using TestNG
+* Providing Multiple Test Data Sets to a Single Test Method
+* Passing Multiple Parameters from `@DataProvider` to `@Test`
+* Executing the Same Test Method with Different Test Data
+* Using Hardcoded Test Data within the Java Class
+* Login Testing using `@DataProvider`
+* Product Search Testing using `@DataProvider`
+
+### DataProvider Practice Programs
+
+* `DataProviderLoginPractice.java`
+* `DataProviderSearchProductPractice.java`
+
+---
 
 # Project Design
 
-- Common browser setup is maintained in a reusable `BaseClass`.
-- Test classes are organized topic-wise using separate packages.
-- Maven is used for dependency management.
-- The project structure is designed to support future expansion using the Page Object Model (POM).
+* Common browser setup is maintained in a reusable `BaseClass`.
+* Test classes are organized topic-wise using separate packages.
+* Maven is used for dependency management.
+* TestNG is used as the testing framework for test execution, assertions, attributes, and data-driven testing.
+* Explicit waits are used where synchronization is required.
+* The project structure is designed to support future expansion using the Page Object Model (POM).
 
 ---
 
 # Upcoming Topics
 
-- File Upload & Download
-- SVG Elements
-- Shadow DOM
-- TestNG (Ongoing)
-- Page Object Model (POM)
-- Data Driven Testing
-- Apache POI (Excel)
-- Log4j
-- Extent Reports
-- Jenkins CI/CD
-- Selenium Grid
+## TestNG
+
+* `@Parameters`
+* `testng.xml`
+* Passing parameters through `testng.xml`
+* `@Optional`
+* TestNG Groups
+* Include Groups
+* Exclude Groups
+* Include Methods
+* Exclude Methods
+
+## Data-Driven Testing
+
+* External Test Data
+* Apache POI
+* Reading Test Data from Excel
+* Excel Integration with TestNG `@DataProvider`
+
+## Selenium
+
+* File Upload & Download
+* SVG Elements
+* Shadow DOM
+* Nested Shadow DOM
+
+## Selenium Framework
+
+* Page Object Model (POM)
+* Page Factory
+* Utility Classes
+* Configuration / Properties Files
+* Log4j
+* Extent Reports
+
+## Advanced Automation
+
+* Jenkins CI/CD
+* Selenium Grid
+
 
 ---
 
