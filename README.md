@@ -26,7 +26,8 @@ SeleniumJavaPractice
 │   │   ├── java
 │   │   │   │
 │   │   │   ├── base
-│   │   │   │   └── BaseClass.java
+│   │   │   │   ├── BaseClass.java
+│   │   │   │   └── ParametersBaseClass.java
 │   │   │   │
 │   │   │   ├── pages
 │   │   │   │
@@ -125,7 +126,10 @@ SeleniumJavaPractice
 │       │       ├── HardAssertPractice.java
 │       │       ├── SoftAssertPractice.java
 │       │       ├── DataProviderLoginPractice.java
-│       │       └── DataProviderSearchProductPractice.java
+│       │       ├── DataProviderSearchProductPractice.java
+│       │       ├── TestNGParameterPractice.java
+│       │       ├── MultipleParametersPractice.java
+│       │       └── ParametersAndDataProviderPractice.java
 │       │
 │       └── resources
 │
@@ -350,6 +354,7 @@ SeleniumJavaPractice
 * Using Hardcoded Test Data within the Java Class
 * Login Testing using `@DataProvider`
 * Product Search Testing using `@DataProvider`
+* Passing Expected Results through `@DataProvider`
 
 ### DataProvider Practice Programs
 
@@ -358,13 +363,47 @@ SeleniumJavaPractice
 
 ---
 
+## TestNG Parameters
+
+* Introduction to `@Parameters`
+* Passing Parameters through `testng.xml`
+* Passing Multiple Parameters
+* Browser Selection using `@Parameters`
+* URL Configuration using `@Parameters`
+* Understanding `@Optional`
+* Default Values using `@Optional`
+* Combining `@Parameters` with `@DataProvider`
+* Understanding the Difference Between `@Parameters` and `@DataProvider`
+
+### Parameters Practice Programs
+
+* `TestNGParameterPractice.java`
+* `MultipleParametersPractice.java`
+* `ParametersAndDataProviderPractice.java`
+* `OptionalParameterPractice.java`
+
+---
+
+## TestNG XML
+
+* Creating and Configuring `testng.xml`
+* Defining Test Suites
+* Adding Test Classes
+* Passing Parameters through `testng.xml`
+* Browser Configuration through `testng.xml`
+* URL Configuration through `testng.xml`
+
+---
+
 # Project Design
 
-* Common browser setup is maintained in a reusable `BaseClass`.
+* Common browser setup is maintained in reusable `BaseClass` and `ParametersBaseClass`.
 * Test classes are organized topic-wise using separate packages.
 * Maven is used for dependency management.
-* TestNG is used as the testing framework for test execution, assertions, attributes, and data-driven testing.
+* TestNG is used as the testing framework for test execution, assertions, attributes, parameters, and data-driven testing.
 * Explicit waits are used where synchronization is required.
+* `testng.xml` is used for test configuration and parameter passing.
+* `@DataProvider` is used for data-driven testing.
 * The project structure is designed to support future expansion using the Page Object Model (POM).
 
 ---
@@ -373,22 +412,69 @@ SeleniumJavaPractice
 
 ## TestNG
 
-* `@Parameters`
-* `testng.xml`
-* Passing parameters through `testng.xml`
-* `@Optional`
+### Groups
+
 * TestNG Groups
+* Smoke Testing Groups
+* Sanity Testing Groups
+* Regression Testing Groups
 * Include Groups
 * Exclude Groups
 * Include Methods
 * Exclude Methods
+
+### Parallel Execution
+
+* Sequential vs Parallel Execution
+* `parallel="methods"`
+* `parallel="tests"`
+* `parallel="classes"`
+* `thread-count`
+* Parallel Selenium Execution
+* Thread Safety
+* `ThreadLocal<WebDriver>`
+
+### Retry Analyzer
+
+* `IRetryAnalyzer`
+* Retrying Failed Tests
+* Configuring Retry Attempts
+
+### TestNG Listeners
+
+* `ITestListener`
+* `ISuiteListener`
+* `onTestStart()`
+* `onTestSuccess()`
+* `onTestFailure()`
+* `onTestSkipped()`
+
+### Screenshots
+
+* Selenium `TakesScreenshot`
+* Screenshot on Test Failure
+* Listener + Screenshot Integration
+* Dynamic Screenshot Naming
+
+### TestNG Reports
+
+* Default TestNG Reports
+* `test-output`
+* `index.html`
+* Passed / Failed / Skipped Results
+
+---
 
 ## Data-Driven Testing
 
 * External Test Data
 * Apache POI
 * Reading Test Data from Excel
+* Excel Workbook / Sheet / Row / Cell
 * Excel Integration with TestNG `@DataProvider`
+* Excel-Driven Login Testing
+
+---
 
 ## Selenium
 
@@ -396,6 +482,8 @@ SeleniumJavaPractice
 * SVG Elements
 * Shadow DOM
 * Nested Shadow DOM
+
+---
 
 ## Selenium Framework
 
@@ -406,11 +494,18 @@ SeleniumJavaPractice
 * Log4j
 * Extent Reports
 
+---
+
 ## Advanced Automation
 
 * Jenkins CI/CD
 * Selenium Grid
+* Cross-Browser Testing
+* Parallel Execution in CI/CD
 
+````
+
+---
 
 ---
 
@@ -419,13 +514,19 @@ SeleniumJavaPractice
 1. Clone the repository.
 2. Import it as a Maven project in Eclipse.
 3. Update Maven dependencies.
-4. Run the required Java class as a **Java Application**.
+4. Verify the required parameters in `testng.xml`.
+5. Run the required TestNG class or `testng.xml` suite.
+6. Review the TestNG execution results.
 
 ---
 
 # Learning Goal
 
-This repository documents my journey in learning Selenium automation and serves as a reference for practicing Selenium WebDriver concepts using Java and Maven. It will continue to evolve as I progress toward building a complete automation framework.
+This repository documents my hands-on journey in learning **Selenium WebDriver, Java, TestNG, and Maven**.
+
+It serves as a practical reference for practicing Selenium automation concepts and TestNG framework features through individual hands-on programs.
+
+The project will continue to evolve as I progress toward building a **complete, maintainable QA automation framework** using Java, Selenium, TestNG, Maven, Page Object Model, data-driven testing, reporting, logging, and CI/CD.
 
 ---
 
@@ -433,4 +534,4 @@ This repository documents my journey in learning Selenium automation and serves 
 
 **Rani**
 
-Aspiring QA Automation Engineer | Java | Selenium WebDriver | Maven | Git | GitHub | ISTQB CTFL & CTFL-AT Certified
+Aspiring QA Automation Engineer | Java | Selenium WebDriver | TestNG | Maven | Git | GitHub | ISTQB CTFL & CTFL-AT Certified
